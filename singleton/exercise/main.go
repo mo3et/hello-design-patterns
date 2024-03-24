@@ -11,7 +11,7 @@ type ShoppingCart struct {
 
 // 单例实例以及同步
 
-var (
+var   (
 	instance *ShoppingCart
 	once     sync.Once
 )
