@@ -133,6 +133,8 @@ func main() {
 	// 米饭再分别加个煎蛋和一份老干妈
 	rice = NewFriedEggDecorator(rice)
 	rice = NewLaoGanMaDecorator(rice)
+	// rice = NewHamSausageDecorator(rice)
+	fmt.Println("")
 	rice.Eat()
 	fmt.Println(rice.Eat())
 }

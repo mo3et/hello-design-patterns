@@ -1,6 +1,7 @@
 package factorymethod
 
 // IRuleConfigParser IRuleConfigParser
+// 抽象产品
 type IRuleConfigParser interface {
 	Parse(data []byte)
 }
@@ -22,6 +23,7 @@ func (Y yamlRuleConfigParser) Parse(data []byte) {
 }
 
 // IRuleConfigParserFactory 工厂方法接口 !!
+// 抽象工厂 为了实例化对应工厂
 type IRuleConfigParserFactory interface {
 	CreateParser() IRuleConfigParser
 }
@@ -43,6 +45,7 @@ func (j jsonRuleConfigParserFactory) CreateParser() IRuleConfigParser {
 }
 
 // NewIRuleConfigParserFactory 用一个简单工厂封装工厂方法
+// 进行判断 输入什么产品类型 就调用对应工厂 生成对应产品
 func NewIRuleConfigParserFactory(t string) IRuleConfigParserFactory {
 	switch t {
 	case "json":
