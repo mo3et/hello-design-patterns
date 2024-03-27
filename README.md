@@ -22,6 +22,22 @@ Design patterns in go
 </Details>
 
 ## 设计模式的六大原则
+[SOLID_Principle](./SOLID_Principle/README.md)
+
+<Details>
+<Summary>Deprecated</Summary>
+
+### 0. 单一职责原则 (Single Responsibility Principle)
+万物基石?
+- 一个类只负责完成一个职责或功能
+- 高内聚，低耦合
+- 并不是越细越好，要把握好尺度
+> #### 需要拆分的场景 
+> - 类中代码函数或属性过多
+> - 私有方法过多
+> - 类依赖的其他类过多
+> - 类大量集中的方法都是集中操作类中的几个属性
+
 ### 1. 开闭原则（Open Close Principle）
 - 对扩展开放，对修改关闭。
 - 在程序需要进行拓展的时候，不能去修改原有的代码，实现一个热插拔的效果。
@@ -46,10 +62,8 @@ Design patterns in go
 - 它还有另外一个意思是：降低类之间的耦合度。
 - 由此可见，其实设计模式就是从大型软件架构出发、便于升级和维护的软件设计思想，它强调降低依赖，降低耦合。
 
-### 5. 迪米特法则，又称最少知道原则（Demeter Principle）
+### 5. 迪米特法则 (最少知道原则)（Demeter Principle）
 
 - 最少知道原则是指：一个实体应当尽量少地与其他实体之间发生相互作用，使得系统功能模块相对独立。
 
-### 6. 合成复用原则（Composite Reuse Principle）
-
-- 合成复用原则是指：尽量使用合成/聚合的方式，而不是使用继承。
+</Details>
