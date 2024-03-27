@@ -10,6 +10,28 @@ Design patterns in go
 合理运用设计模式可以解决很多问题,每种模式在现实中都有对应的原理来与之对应,每种模式都描述了在外面实际发生的问题,以及解决问题的核心方案.(现实问题的实践方案)
 
 ## Design Patterns Types
+### 创建型模式
+> 提供了创建对象的同时隐藏创建逻辑的方式，而不是直接实例化对象
+>
+> 在判断针对某个给定实例需要创建哪些对象时更加灵活
+- 工厂模式(Factory Pattern)
+    - 简单工厂模式(Simple Factory)
+    - 工厂方法模式(Factory Method)
+    - 抽象工厂模式(Abstract Factory) 
+- 单例模式(Singleton Pattern)
+- 建造者模式(Builder Pattern)
+
+### 结构型模式
+> 关注类和对象的集合。通过组合接口和定义组合对象获得新功能
+- 适配器模式(Adapter Pattern)
+- 装饰器模式(Decorator Pattern)
+
+### 行为型模式
+> 注重对象之间的通信
+- 责任链模式(Chain Pattern)
+- 观察者模式(Observer Pattern)
+
+
 
 <Details>
 <Summary>Deprecated</Summary>
